@@ -20,7 +20,8 @@ def load_data():
 
 @st.cache_resource
 def load_model():
-    return joblib.load("heat_stress_xgboost_model.joblib")
+    # Update this path to include the folder name
+    return joblib.load("isro_heat_mitigation/heat_stress_xgboost_model.joblib")
 
 df_baseline = load_data()
 model = load_model()

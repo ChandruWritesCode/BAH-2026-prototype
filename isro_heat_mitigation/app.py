@@ -15,7 +15,8 @@ st.markdown("Team CodeCosmos | **Target:** Bengaluru Core (5km Radius)")
 # We use Streamlit caching so the data only loads once, keeping the app fast
 @st.cache_data
 def load_data():
-    return pd.read_csv("ml_training_data.csv")
+    # Update this line to include the folder path
+    return pd.read_csv("isro_heat_mitigation/ml_training_data.csv")
 
 @st.cache_resource
 def load_model():
